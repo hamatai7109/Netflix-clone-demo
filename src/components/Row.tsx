@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const base_url = "https://api.themoviedb.org/3";
 
 type Props = {
@@ -18,7 +20,7 @@ type Movie = {
 
   //trailerのoption
 type Options = {
-    height: string
+    height: string;
     width: string;
     playerVars: {
     autoplay: 0 | 1 | undefined;
